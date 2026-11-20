@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>RAW CUT — The Impound</title>
+  <meta name="description" content="SUPERHOT-style frozen-time spy action game set in a four-story impound building.">
+  <meta property="og:title" content="RAW CUT — The Impound">
+  <meta property="og:description" content="SUPERHOT-style frozen-time spy action game set in a four-story impound building.">
+  <style>
+    :root{--ink:#070b12;--paper:#d8d2c0;--stamp:#b8362f;--sodium:#c9a24a;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--ink)}
+    html{scroll-padding-top:env(safe-area-inset-top,0px)}
+    html,body{height:100%;margin:0;background:var(--ink);overflow:hidden;touch-action:none;-webkit-user-select:none;user-select:none}
+    #w{position:relative;width:100%;height:100%;cursor:crosshair}
+    #w canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+    #h{pointer-events:none}
+    #fb{position:absolute;right:20px;bottom:42%;width:78px;height:78px;border-radius:50%;border:3px solid var(--stamp);color:var(--stamp);background:rgba(10,16,24,.55);display:flex;align-items:center;justify-content:center;font:700 14px "Courier New",ui-monospace,monospace;letter-spacing:.08em}
+    #ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:22px;text-align:center;background:rgba(6,8,10,.82);color:var(--paper);font:14px/1.5 "Courier New",ui-monospace,monospace;cursor:pointer}
+    #ov.h{display:none}
+    .stamp{display:inline-block;border:4px solid var(--stamp);color:var(--stamp);padding:8px 14px;font:700 21px/1.2 "Courier New",ui-monospace,monospace;letter-spacing:.06em;transform:rotate(-3deg);text-transform:uppercase;margin:0}
+    .big{font:700 30px/1.15 "Courier New",ui-monospace,monospace;letter-spacing:.04em;margin:0}
+    .dim{opacity:.68;max-width:38ch;margin:0}
+    .q{max-width:30ch;border-left:3px solid var(--sodium);padding-left:12px;text-align:left;margin:0}
+    .bt{display:block;margin:4px auto;min-width:210px;padding:11px 18px;background:transparent;border:2px solid var(--paper);color:var(--paper);font:700 14px "Courier New",ui-monospace,monospace;letter-spacing:.08em;cursor:pointer}
+    .bt:hover{background:rgba(216,210,192,.14)}
+    #pb{position:absolute;right:12px;top:12px;width:38px;height:38px;border:2px solid rgba(216,210,192,.6);border-radius:8px;color:var(--paper);display:flex;align-items:center;justify-content:center;font:700 13px "Courier New",monospace;background:rgba(10,16,24,.5);cursor:pointer}
+  </style>
+</head>
+<body>
+  <div id="w">
+    <canvas id="c"></canvas>
+    <canvas id="h"></canvas>
+    <div id="fb">FIRE</div>
+    <div id="pb">❚❚</div>
+    <div id="ov"></div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
